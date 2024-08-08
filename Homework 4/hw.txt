@@ -1,0 +1,22 @@
+﻿1e) It does not pass the test because when you add elements to a vector, memory is shuffled around behind the scenes and the iterator becomes invalid. 
+
+
+3) Because coord is not a primitive member function, the <, >, and other comparison operators are not defined, and it will not compile. This is an issue when trying to insert and use other functions defined in Set.
+
+
+4b) We need both parameters - the string path contains the previous paths to the current file and the pointer tells us how to access the subfiles. If there were no path name, we wouldn’t have a cumulative list of the previous files accessed before. If there were no f, we wouldn’t be able to access the actual files. 
+
+
+5a) O(N^3) - because the inner loop is the loop with the max iterations a loop could run for, we find that the 1st loop is O(N), the 2nd loop O(N), and also the 3rd loop O(N) making N*N*N. 
+
+
+5b) O(N^3) - this time complexity is still ultimately O(N^3). Even though the 2nd for loop is run ½ as many times, ultimately this constant doesn’t matter and it is still run O(N) times making the inner loop still N^3
+
+
+6a) O(N)^2 - this is the worst case time complexity because this assumes set 2 is not yet in the result, and the entire set must be inserted. It also assumes the get function has to run N times visiting N nodes. The insert function then at max would have to traverse N nodes to insert the largest value at the end of the set. This makes the inside of the for loop N + N = 2N. The outer for loop runs for N times making this 2N^2, but because the 2 is insignificant, we get O(N^2).
+
+
+6b) O(NlogN) - the time complexity of this function has many different for loops in the structure. Each for loop is O(N), added together, not multiplied, because they are not nested. But because the sorting takes O(NlogN), this is ultimately bigger than the O(N)’s, and becomes the time  complexity.
+
+
+6c) O(N) - the while loop and for loop is the only loop that has a significant run time. The while loop worst case will run for 2O(N) and the for loop will run O(N). The if and else statement inside have constant big O. So in general, the total time complexity will be 3O(N) but the constant its insignificant.

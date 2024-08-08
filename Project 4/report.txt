@@ -1,0 +1,16 @@
+﻿1. I was able to finish everything.
+2. Possibly might not have put all helper functions at the top of the cpp files like requested in the spec
+3. Did not use any banned STL containers
+
+
+
+
+
+
+I did case sensitive inputs to ensure my makeLower function was correct. For directors, actors, and movie ID’s, I put random capitalization in the names to be sure I still got the correct output. I also tested my code by requesting a negative number of movies to ensure I returned an empty vector. I also tried running the code with a smaller file with fewer movies and users to ensure correct behavior. I checked if the user requested more movies than even in the database, that this should return as many as it can. 
+
+
+I tested my treemm by outputting statements after a tree was initialized to ensure items were inputted correctly. I also tested my User class by using the debugger to make sure emails kept their case sensitivity. I tested userDataBase alone to ensure that it could correctly retrieve users alone. I tested the movieDataBase by trying to get movies based in ID’s, actors, directors, and genres. Once each individual component of retrieval was correct, I implemented recommender. 
+
+
+I tested recommender by calculating scores based solely on directors, solely on actors, and then solely on genres. I did this with individualized hash tables. One all categories were computing the right scores, I had to test my sort function by testing it with results that had ties, and the same movie ratings.
